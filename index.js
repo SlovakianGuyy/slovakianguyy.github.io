@@ -4,9 +4,11 @@ el = $("#loading");
 word = el.html().trim();
 finished = false;
 
-el.html("");
-for (var i = 0; i < word.length; i++) {
-  el.append("<span>"+word.charAt(i)+"</span>");
+function setup() {
+  el.html("");
+  for (var i = 0; i < word.length; i++) {
+    el.append("<span>"+word.charAt(i)+"</span>");
+  }
 }
 
 setTimeout(write, 75);
